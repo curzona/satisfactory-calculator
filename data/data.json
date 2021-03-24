@@ -72,7 +72,7 @@
         {
             "name": "Blender",
             "key_name": "blender",
-            "category": "blending",
+            "category": "crafting4",
             "power": 75,
             "max": 4
         },
@@ -2402,7 +2402,7 @@
 		{
             "name": "Alternate: Diluted Fuel",
             "key_name": "alt-diluted-fuel",
-            "category": "blending",
+            "category": "crafting4",
             "time": 6,
             "ingredients": [
                 ["heavy-oil-residue", 5],
@@ -2430,6 +2430,42 @@
                 ["copper-ingot", 10]
             ],
             "product": ["aluminum-casing", 15]
+        },
+        {
+            "name": "Assembly Director System",
+            "key_name": "assembly-director-system",
+            "category": "crafting2",
+            "time": 80,
+            "ingredients": [
+                ["adaptive-control-unit", 2],
+                ["supercomputer", 1]
+            ],
+            "product": ["assembly-director-system", 1]
+        },
+        {
+            "name": "Cooling System",
+            "key_name": "cooling-system",
+            "category": "crafting4",
+            "time": 10,
+            "ingredients": [
+                ["heat-sink", 2],
+                ["rubber", 2],
+                ["water", 5],
+                ["nitrogen-gas", 25]
+            ],
+            "product": ["cooling-system", 1]
+        },
+        {
+            "name": "Alternate: Cooling Device",
+            "key_name": "alt-cooling-device",
+            "category": "crafting4",
+            "time": 10,
+            "ingredients": [
+                ["heat-sink", 2],
+                ["motor", 1],
+                ["nitrogen-gas", 24]
+            ],
+            "product": ["cooling-system", 2]
         }
     ],
     "resources": [
