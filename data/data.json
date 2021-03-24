@@ -2459,7 +2459,7 @@
             "name": "Alternate: Cooling Device",
             "key_name": "alt-cooling-device",
             "category": "crafting4",
-            "time": 10,
+            "time": 32,
             "ingredients": [
                 ["heat-sink", 2],
                 ["motor", 1],
@@ -2476,6 +2476,16 @@
                 ["copper", 30]
             ],
             "product": ["copper-powder", 5]
+        },
+        {
+            "name": "Empty Fluid Tank",
+            "key_name": "empty-fluid-tank",
+            "category": "crafting1",
+            "time": 1,
+            "ingredients": [
+                ["aluminum-ingot", 1]
+            ],
+            "product": ["empty-fluid-tank", 1]
         }
     ],
     "resources": [
