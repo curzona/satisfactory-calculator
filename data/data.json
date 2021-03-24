@@ -2400,8 +2400,8 @@
             "product": ["iodine-infused-filter", 1]
         },
 		{
-            "name": "Diluted Fuel",
-            "key_name": "diluted-fuel",
+            "name": "Alternate: Diluted Fuel",
+            "key_name": "alt-diluted-fuel",
             "category": "blending",
             "time": 6,
             "ingredients": [
@@ -2409,6 +2409,27 @@
                 ["water", 10]
             ],
             "product": ["fuel", 10]
+        },
+        {
+            "name": "Aluminum Casing",
+            "key_name": "aluminum-casing",
+            "category": "crafting1",
+            "time": 2,
+            "ingredients": [
+                ["aluminum-ingot", 3]
+            ],
+            "product": ["aluminum-casing", 2]
+        },
+        {
+            "name": "Alternate: Alclad Casing",
+            "key_name": "alt-alclad-casing",
+            "category": "crafting2",
+            "time": 8,
+            "ingredients": [
+                ["aluminum-ingot", 15],
+                ["copper-ingot", 10]
+            ],
+            "product": ["aluminum-casing", 15]
         }
     ],
     "resources": [
