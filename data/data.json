@@ -2466,6 +2466,16 @@
                 ["nitrogen-gas", 24]
             ],
             "product": ["cooling-system", 2]
+        },
+        {
+            "name": "Copper Powder",
+            "key_name": "copper-powder",
+            "category": "crafting1",
+            "time": 6,
+            "ingredients": [
+                ["copper", 30]
+            ],
+            "product": ["copper-powder", 5]
         }
     ],
     "resources": [
