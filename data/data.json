@@ -2917,7 +2917,7 @@
                 ["turbo-motor", 2],
                 ["fused-modular-frame", 2]
             ],
-            "product": ["thermal-propulsion-rocket", 1]
+            "product": ["thermal-propulsion-rocket", 2]
         }
     ],
     "resources": [
