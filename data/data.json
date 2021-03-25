@@ -70,6 +70,13 @@
             "max": 2
         },
         {
+            "name": "Packager",
+            "key_name": "packager",
+            "category": "packaging",
+            "power": 10,
+            "max": 1
+        },
+        {
             "name": "Blender",
             "key_name": "blender",
             "category": "crafting4",
@@ -79,9 +86,16 @@
         {
             "name": "Particle Accelerator",
             "key_name": "particle-accelerator",
-            "category": "particle-accelerating",
+            "category": "crafting5",
             "power": 1500,
             "max": 3
+        },
+        {
+            "name": "Nuclear Power Plant",
+            "key_name": "nuclear-power-plant",
+            "category": "nuclear-power-plant",
+            "power": 0,
+            "max": 2
         }
     ],
     "miners": [
@@ -718,6 +732,18 @@
             "stack_size": 50
         },
         {
+            "name": "Fused Modular Frame",
+            "key_name": "fused-modular-frame",
+            "tier": 8,
+            "stack_size": 50
+        },
+        {
+            "name": "Magnetic Field Generator",
+            "key_name": "magnetic-field-generator",
+            "tier": 8,
+            "stack_size": 50
+        },
+        {
             "name": "Nitric Acid",
             "key_name": "nitric-acid",
             "tier": 8,
@@ -794,6 +820,12 @@
             "key_name": "thermal-propulsion-rocket",
             "tier": 8,
             "stack_size": 50
+        },
+        {
+            "name": "Nuclear Waste",
+            "key_name": "nuclear-waste",
+            "tier": 7,
+            "stack_size": 500
         }
     ],
     "recipes": [
@@ -2473,7 +2505,7 @@
             "category": "crafting1",
             "time": 6,
             "ingredients": [
-                ["copper", 30]
+                ["copper-ingot", 30]
             ],
             "product": ["copper-powder", 5]
         },
@@ -2486,6 +2518,266 @@
                 ["aluminum-ingot", 1]
             ],
             "product": ["empty-fluid-tank", 1]
+        },
+        {
+            "name": "Encased Plutonium Cell",
+            "key_name": "encased-plutonium-cell",
+            "category": "crafting2",
+            "time": 6,
+            "ingredients": [
+                ["plutonium-pellets", 1],
+                ["concrete", 2]
+            ],
+            "product": ["encased-plutonium-cell", 1]
+        },
+        {
+            "name": "Alternate: Instant Plutonium Cell",
+            "key_name": "alt-instant-plutonium-cell",
+            "category": "crafting5",
+            "time": 60,
+            "ingredients": [
+                ["non-fissile-uranium", 75],
+                ["aluminum-casing", 25],
+                ["nitrogen-gas", 25]
+            ],
+            "product": ["encased-plutonium-cell", 25]
+        },
+        {
+            "name": "Fused Modular Frame",
+            "key_name": "fused-modular-frame",
+            "category": "crafting4",
+            "time": 40,
+            "ingredients": [
+                ["heavy-modular-frame", 1],
+                ["aluminum-casing", 50],
+                ["nitrogen-gas", 25]
+            ],
+            "product": ["fused-modular-frame", 1]
+        },
+        {
+            "name": "Alternate: Heat-Fused Frame",
+            "key_name": "alt-heat-fused-frame",
+            "category": "crafting4",
+            "time": 20,
+            "ingredients": [
+                ["heavy-modular-frame", 1],
+                ["aluminum-ingot", 50],
+                ["nitric-acid", 25],
+                ["fuel", 10]
+            ],
+            "product": ["fused-modular-frame", 1]
+        },
+        {
+            "name": "Magnetic Field Generator",
+            "key_name": "magnetic-field-generator",
+            "category": "crafting3",
+            "time": 120,
+            "ingredients": [
+                ["versatile-framework", 5],
+                ["em-control-rod", 2],
+                ["battery", 10]
+            ],
+            "product": ["magnetic-field-generator", 2]
+        },
+        {
+            "name": "Nitric Acid",
+            "key_name": "nitric-acid",
+            "category": "crafting4",
+            "time": 6,
+            "ingredients": [
+                ["nitrogen-gas", 24],
+                ["water", 6],
+                ["iron-plate", 1]
+            ],
+            "product": ["nitric-acid", 6]
+        },
+        {
+            "name": "Non-fissile Uranium",
+            "key_name": "non-fissile-uranium",
+            "category": "crafting4",
+            "time": 12,
+            "ingredients": [
+                ["nuclear-waste", 15],
+                ["nitric-acid", 3],
+                ["sulfuric-acid", 6],
+                ["silica", 5]
+            ],
+            "product": ["non-fissile-uranium", 10]
+        },
+        {
+            "name": "Nuclear Waste",
+            "key_name": "nuclear-waste",
+            "category": "nuclear-power-plant",
+            "time": 300,
+            "ingredients": [
+                ["nuclear-fuel-rod", 1],
+                ["water", 1500]
+            ],
+            "product": ["nuclear-waste", 25]
+        },
+        {
+            "name": "Nuclear Pasta",
+            "key_name": "nuclear-pasta",
+            "category": "crafting5",
+            "time": 120,
+            "ingredients": [
+                ["copper-powder", 200],
+                ["pressure-conversion-cube", 1]
+            ],
+            "product": ["nuclear-pasta", 1]
+        },
+        {
+            "name": "Packaged Nitrogen Gas",
+            "key_name": "packaged-nitrogen-gas",
+            "category": "packaging",
+            "time": 1,
+            "ingredients": [
+                ["nitrogen-gas", 4],
+                ["empty-fluid-tank", 1]
+            ],
+            "product": ["packaged-nitrogen-gas", 1]
+        },
+        {
+            "name": "Unpackage Nitrogen Gas",
+            "key_name": "unpackage-nitrogen-gas",
+            "category": "packaging",
+            "time": 1,
+            "ingredients": [
+                ["packaged-nitrogen-gas", 1]
+            ],
+            "product": ["nitrogen-gas", 4]
+        },
+        {
+            "name": "Packaged Nitric Acid",
+            "key_name": "packaged-nitric-acid",
+            "category": "packaging",
+            "time": 2,
+            "ingredients": [
+                ["packaged-nitric-acid", 1],
+                ["empty-canister", 1]
+            ],
+            "product": ["nitric-acid", 1]
+        },
+        {
+            "name": "Unpackage Nitric Acid",
+            "key_name": "unpackage-nitric-acid",
+            "category": "packaging",
+            "time": 3,
+            "ingredients": [
+                ["packaged-nitric-acid", 1]
+            ],
+            "product": ["nitric-acid", 1]
+        },
+        {
+            "name": "Packaged Alumina Solution",
+            "key_name": "packaged-alumina-solution",
+            "category": "packaging",
+            "time": 1,
+            "ingredients": [
+                ["alumina-solution", 2],
+                ["empty-canister", 2]
+            ],
+            "product": ["packaged-alumina-solution", 2]
+        },
+        {
+            "name": "Unpackage Alumina Solution",
+            "key_name": "unpackage-alumina-solution",
+            "category": "packaging",
+            "time": 1,
+            "ingredients": [
+                ["packaged-alumina-solution", 2]
+            ],
+            "product": ["alumina-solution", 2]
+        },
+        {
+            "name": "Packaged Sulfuric Acid",
+            "key_name": "packaged-sulfuric-acid",
+            "category": "packaging",
+            "time": 3,
+            "ingredients": [
+                ["sulfuric-acid", 2],
+                ["empty-canister", 2]
+            ],
+            "product": ["packaged-sulfuric-acid", 2]
+        },
+        {
+            "name": "Unpackage Sulfuric Acid",
+            "key_name": "unpackage-sulfuric-acid",
+            "category": "packaging",
+            "time": 1,
+            "ingredients": [
+                ["packaged-sulfuric-acid", 1]
+            ],
+            "product": ["sulfuric-acid", 1]
+        },
+        {
+            "name": "Plutonium Fuel Rod",
+            "key_name": "plutonium-fuel-rod",
+            "category": "crafting3",
+            "time": 120,
+            "ingredients": [
+                ["encased-plutonium-cell", 15],
+                ["steel-beam", 8],
+                ["em-control-rod", 3],
+                ["heat-sink", 5]
+            ],
+            "product": ["plutonium-fuel-rod", 1]
+        },
+        {
+            "name": "Alternate: Plutonium Fuel Unit",
+            "key_name": "alt-plutonium-fuel-unit",
+            "category": "crafting2",
+            "time": 60,
+            "ingredients": [
+                ["encased-plutonium-cell", 10],
+                ["pressure-conversion-cube", 1]
+            ],
+            "product": ["plutonium-fuel-rod", 1]
+        },
+        {
+            "name": "Plutonium Pellets",
+            "key_name": "plutonium-pellets",
+            "category": "crafting5",
+            "time": 60,
+            "ingredients": [
+                ["non-fissile-uranium", 100],
+                ["nuclear-waste", 50]
+            ],
+            "product": ["plutonium-pellets", 30]
+        },
+        {
+            "name": "Plutonium Waste",
+            "key_name": "plutonium-waste",
+            "category": "nuclear-power-plant",
+            "time": 150,
+            "ingredients": [
+                ["plutonium-fuel-rod", 1],
+                ["water", 750]
+            ],
+            "product": ["plutonium-waste", 5]
+        },
+        {
+            "name": "Pressure Conversion Cube",
+            "key_name": "pressure-conversion-cube",
+            "category": "crafting2",
+            "time": 60,
+            "ingredients": [
+                ["fused-modular-frame", 1],
+                ["radio-control-unit", 2]
+            ],
+            "product": ["pressure-conversion-cube", 1]
+        },
+        {
+            "name": "Thermal Propulsion Rocket",
+            "key_name": "thermal-propulsion-rocket",
+            "category": "crafting3",
+            "time": 120,
+            "ingredients": [
+                ["modular-engine", 5],
+                ["turbo-motor", 2],
+                ["fused-modular-frame", 2]
+            ],
+            "product": ["thermal-propulsion-rocket", 1]
         }
     ],
     "resources": [
