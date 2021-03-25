@@ -138,7 +138,7 @@
             "name": "Resource Well Extractor",
             "key_name": "resource-well-extractor",
             "category": "gas",
-            "base_rate": 120,
+            "base_rate": 60,
             "power": 0
         }
     ],
