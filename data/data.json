@@ -2325,10 +2325,10 @@
             "name": "Aluminum Ingot",
             "key_name": "aluminum-ingot",
             "category": "smelting2",
-            "time": 3,
+            "time": 4,
             "ingredients": [
-                ["aluminum-scrap", 12],
-                ["silica", 7]
+                ["aluminum-scrap", 6],
+                ["silica", 5]
             ],
             "product": ["aluminum-ingot", 4]
         },
