@@ -1496,7 +1496,7 @@
         },
         {
             "name": "Alternate: Rigour Motor",
-            "key_name": "alt-motor",
+            "key_name": "alt-rigour-motor",
             "category": "crafting3",
             "time": 48,
             "ingredients": [
@@ -1505,6 +1505,17 @@
                 ["crystal-oscillator", 1]
             ],
             "product": ["motor", 6]
+        },
+        {
+            "name": "Alternate: Electric Motor",
+            "key_name": "alt-electric-motor",
+            "category": "crafting2",
+            "time": 16,
+            "ingredients": [
+                ["em-control-rod", 1],
+                ["rotor", 2]
+            ],
+            "product": ["motor", 2]
         },
         {
             "name": "Circuit Board",
@@ -1636,19 +1647,32 @@
             "product": ["turbofuel", 4]
         },
         {
+            "name": "Alternate: Turbo Blend Fuel",
+            "key_name": "alt-turbo-blend-fuel",
+            "category": "crafting4",
+            "time": 8,
+            "ingredients": [
+                ["fuel", 2],
+                ["heavy-oil-residue", 4],
+                ["sulfur", 3],
+                ["petroleum-coke", 3]
+            ],
+            "product": ["turbofuel", 6]
+        },
+        {
             "name": "Empty Canister",
             "key_name": "empty-canister",
             "category": "crafting1",
             "time": 4,
             "ingredients": [
                 ["plastic", 2]
-                ],
+            ],
             "product": ["empty-canister", 4]
         },
         {
             "name": "Packaged Water",
             "key_name": "packaged-water",
-            "category": "refining",
+            "category": "packaging",
             "time": 2,
             "ingredients": [
                 ["water", 2],
@@ -1659,7 +1683,7 @@
         {
             "name": "Packaged Oil",
             "key_name": "packaged-oil",
-            "category": "refining",
+            "category": "packaging",
             "time": 4,
             "ingredients": [
                 ["crude-oil", 2],
@@ -1670,7 +1694,7 @@
         {
             "name": "Packaged Heavy Oil Residue",
             "key_name": "packaged-heavy-oil-residue",
-            "category": "refining",
+            "category": "packaging",
             "time": 4,
             "ingredients": [
                 ["heavy-oil-residue", 2],
@@ -1679,15 +1703,35 @@
             "product": ["packaged-heavy-oil-residue", 2]
         },
         {
+            "name": "Unpackage Heavy Oil Residue",
+            "key_name": "unpackage-heavy-oil-residue",
+            "category": "packaging",
+            "time": 6,
+            "ingredients": [
+                ["packaged-heavy-oil-residue", 2]
+            ],
+            "product": ["heavy-oil-residue", 2]
+        },
+        {
             "name": "Packaged Fuel",
             "key_name": "packaged-fuel",
-            "category": "refining",
+            "category": "packaging",
             "time": 3,
             "ingredients": [
                 ["fuel", 2],
                 ["empty-canister", 2]
             ],
             "product": ["packaged-fuel", 2]
+        },
+        {
+            "name": "Unpackage Fuel",
+            "key_name": "unpackage-fuel",
+            "category": "packaging",
+            "time": 2,
+            "ingredients": [
+                ["packaged-fuel", 2]
+            ],
+            "product": ["fuel", 2]
         },
         {
             "name": "Alternate: Diluted Packaged Fuel",
@@ -1711,9 +1755,20 @@
             "product": ["fuel", 4]
         },
         {
+            "name": "Alternate: Diluted Fuel",
+            "key_name": "alt-diluted-fuel",
+            "category": "crafting4",
+            "time": 6,
+            "ingredients": [
+                ["heavy-oil-residue", 5],
+                ["water", 10]
+            ],
+            "product": ["fuel", 10]
+        },
+        {
             "name": "Packaged Turbofuel",
             "key_name": "packaged-turbofuel",
-            "category": "refining",
+            "category": "packaging",
             "time": 6,
             "ingredients": [
                 ["turbofuel", 2],
@@ -1724,13 +1779,23 @@
         {
             "name": "Packaged Liquid Biofuel",
             "key_name": "packaged-liquid-biofuel",
-            "category": "refining",
+            "category": "packaging",
             "time": 3,
             "ingredients": [
                 ["liquid-biofuel", 2],
                 ["empty-canister", 2]
             ],
             "product": ["packaged-liquid-biofuel", 2]
+        },
+        {
+            "name": "Unpackage Liquid Biofuel",
+            "key_name": "unpackage-liquid-biofuel",
+            "category": "packaging",
+            "time": 2,
+            "ingredients": [
+                ["packaged-liquid-biofuel", 2]
+            ],
+            "product": ["liquid-biofuel", 2]
         },
         {
             "name": "Rubber",
@@ -1915,6 +1980,30 @@
                 ["plastic", 28]
             ],
             "product": ["supercomputer", 1]
+        },
+        {
+            "name": "Alternate: OC Supercomputer",
+            "key_name": "alt-oc-supercomputer",
+            "category": "crafting2",
+            "time": 20,
+            "ingredients": [
+                ["radio-control-unit", 3],
+                ["cooling-system", 3]
+            ],
+            "product": ["supercomputer", 1]
+        },
+        {
+            "name": "Alternate: Super-State computer",
+            "key_name": "alt-super-state-computer",
+            "category": "crafting3",
+            "time": 50,
+            "ingredients": [
+                ["computer", 3],
+                ["em-control-rod", 2],
+                ["battery", 20],
+                ["wire", 45]
+            ],
+            "product": ["supercomputer", 2]
         },
         {
             "name": "High-Speed Connector",
@@ -2181,10 +2270,21 @@
             "category": "refining",
             "time": 6,
             "ingredients": [
-                ["bauxite", 7],
-                ["water", 10]
+                ["bauxite", 12],
+                ["water", 18]
             ],
-            "product": ["alumina-solution", 8]
+            "product": ["alumina-solution", 12]
+        },
+        {
+            "name": "Alternate: Sloppy Alumina",
+            "key_name": "alt-sploppy-alumina",
+            "category": "refining",
+            "time": 6,
+            "ingredients": [
+                ["bauxite", 15],
+                ["water", 15]
+            ],
+            "product": ["alumina-solution", 18]
         },
         {
             "name": "Aluminum Scrap",
@@ -2193,7 +2293,7 @@
             "time": 1,
             "ingredients": [
                 ["alumina-solution", 4],
-                ["petroleum-coke", 1]
+                ["coal", 2]
             ],
             "product": ["aluminum-scrap", 6]
         },
@@ -2204,9 +2304,22 @@
             "time": 2,
             "ingredients": [
                 ["alumina-solution", 3],
-                ["coal", 1]
+                ["petroleum-coke", 1]
             ],
-            "product": ["aluminum-scrap", 5]
+            "product": ["aluminum-scrap", 8]
+        },
+        {
+            "name": "Alternate: Instant Scrap",
+            "key_name": "alt-instant-scrap",
+            "category": "crafting4",
+            "time": 6,
+            "ingredients": [
+                ["bauxite", 15],
+                ["coal", 10],
+                ["sulfuric-acid", 5],
+                ["water", 11]
+            ],
+            "product": ["aluminum-scrap", 30]
         },
         {
             "name": "Aluminum Ingot",
@@ -2233,12 +2346,12 @@
             "name": "Alclad Aluminum Sheet",
             "key_name": "alclad-aluminum-sheet",
             "category": "crafting2",
-            "time": 8,
+            "time": 6,
             "ingredients": [
-                ["aluminum-ingot", 8],
-                ["copper-ingot", 3]
+                ["aluminum-ingot", 3],
+                ["copper-ingot", 1]
             ],
-            "product": ["alclad-aluminum-sheet", 4]
+            "product": ["alclad-aluminum-sheet", 3]
         },
         {
             "name": "Heat Sink",
@@ -2247,7 +2360,7 @@
             "time": 12,
             "ingredients": [
                 ["alclad-aluminum-sheet", 8],
-                ["rubber", 14]
+                ["copper-sheet", 9]
             ],
             "product": ["heat-sink", 2]
         },
@@ -2255,37 +2368,49 @@
             "name": "Alternate: Heat Exchanger",
             "key_name": "alt-heat-sink",
             "category": "crafting2",
-            "time": 32,
+            "time": 12,
             "ingredients": [
-                ["alclad-aluminum-sheet", 20],
-                ["copper-sheet", 30]
+                ["aluminum-casing", 3],
+                ["rubber", 4]
             ],
-            "product": ["heat-sink", 7]
+            "product": ["heat-sink", 2]
         },
         {
             "name": "Radio Control Unit",
             "key_name": "radio-control-unit",
             "category": "crafting3",
-            "time": 24,
+            "time": 48,
             "ingredients": [
-                ["heat-sink", 4],
-                ["rubber", 16],
+                ["aluminum-casing", 24],
                 ["crystal-oscillator", 1],
                 ["computer", 1]
             ],
-            "product": ["radio-control-unit", 1]
+            "product": ["radio-control-unit", 2]
         },
         {
-            "name": "Alternate: Radio Control Unit",
-            "key_name": "alt-radio-control-unit",
+            "name": "Alternate: Radio Control System",
+            "key_name": "alt-radio-control-system",
             "category": "crafting3",
-            "time": 48,
+            "time": 40,
             "ingredients": [
-                ["heat-sink", 10],
-                ["supercomputer", 1],
-                ["quartz-crystal", 30]
+                ["crystal-oscillator", 1],
+                ["circuit-board", 10],
+                ["aluminum-casing", 45],
+                ["rubber", 30]
             ],
             "product": ["radio-control-unit", 3]
+        },
+        {
+            "name": "Alternate: Radio Connection Unit",
+            "key_name": "alt-radio-connection-unit",
+            "category": "crafting3",
+            "time": 16,
+            "ingredients": [
+                ["heat-sink", 4],
+                ["high-speed-connector", 2],
+                ["quartz-crystal", 12]
+            ],
+            "product": ["radio-control-unit", 1]
         },
         {
             "name": "Turbo Motor",
@@ -2293,7 +2418,7 @@
             "category": "crafting3",
             "time": 32,
             "ingredients": [
-                ["heat-sink", 4],
+                ["cooling-system", 4],
                 ["radio-control-unit", 2],
                 ["motor", 4],
                 ["rubber", 24]
@@ -2302,29 +2427,54 @@
         },
         {
             "name": "Alternate: Turbo Rigour Motor",
-            "key_name": "alt-turbo-motor",
+            "key_name": "alt-turbo-rigour-motor",
             "category": "crafting3",
             "time": 64,
             "ingredients": [
                 ["motor", 7],
                 ["radio-control-unit", 5],
-                ["ai-limiter", 9],
-                ["stator", 7]
+                ["em-control-rod", 7],
+                ["rotor", 9]
             ],
             "product": ["turbo-motor", 3]
         },
         {
+            "name": "Alternate: Turbo Pressure Motor",
+            "key_name": "alt-turbo-pressure-motor",
+            "category": "crafting3",
+            "time": 16,
+            "ingredients": [
+                ["motor", 2],
+                ["pressure-conversion-cube", 1],
+                ["packaged-nitrogen-gas", 15],
+                ["stator", 6]
+            ],
+            "product": ["turbo-motor", 1]
+        },
+        {
             "name": "Battery",
             "key_name": "battery",
-            "category": "crafting3",
-            "time": 32,
+            "category": "crafting4",
+            "time": 3,
             "ingredients": [
-                ["alclad-aluminum-sheet", 8],
-                ["wire", 16],
-                ["sulfur", 20],
-                ["plastic", 8]
+                ["sulfuric-acid", 3],
+                ["alumina-solution", 2],
+                ["aluminum-casing", 1]
             ],
-            "product": ["battery", 3]
+            "product": ["battery", 1]
+        },
+        {
+            "name": "Alternate: Classic Battery",
+            "key_name": "alt-classic-battery",
+            "category": "crafting3",
+            "time": 8,
+            "ingredients": [
+                ["sulfur", 6],
+                ["alclad-aluminum-sheet", 7],
+                ["plastic", 8],
+                ["wire", 12]
+            ],
+            "product": ["battery", 4]
         },
         {
             "name": "Sulfuric Acid",
@@ -2335,7 +2485,7 @@
                 ["sulfur", 5],
                 ["water", 5]
             ],
-            "product": ["sulfuric-acid", 10]
+            "product": ["sulfuric-acid", 5]
         },
         {
             "name": "Uranium Pellet",
@@ -2351,26 +2501,27 @@
         {
             "name": "Encased Uranium Cell",
             "key_name": "uranium-cell",
-            "category": "crafting2",
-            "time": 60,
+            "category": "crafting4",
+            "time": 12,
             "ingredients": [
-                ["uranium-pellet", 40],
-                ["concrete", 9]
+                ["uranium", 10],
+                ["concrete", 3],
+                ["sulfuric-acid", 8]
             ],
-            "product": ["uranium-cell", 10]
+            "product": ["uranium-cell", 5]
         },
         {
             "name": "Alternate: Infused Uranium Cell",
             "key_name": "alt-uranium-cell",
             "category": "crafting3",
-            "time": 120,
+            "time": 8,
             "ingredients": [
-                ["uranium-pellet", 40],
-                ["sulfur", 45],
-                ["silica", 45],
-                ["quickwire", 75]
+                ["uranium-pellet", 2],
+                ["silica", 3],
+                ["sulfur", 4],
+                ["quickwire", 5]
             ],
-            "product": ["uranium-cell", 35]
+            "product": ["uranium-cell", 3]
         },
         {
             "name": "Electromagnetic Control Rod",
@@ -2387,12 +2538,12 @@
             "name": "Alternate: Electromagnetic Connection Rod",
             "key_name": "alt-em-control-rod",
             "category": "crafting2",
-            "time": 60,
+            "time": 15,
             "ingredients": [
-                ["stator", 10],
-                ["high-speed-connector", 5]
+                ["stator", 8],
+                ["high-speed-connector", 4]
             ],
-            "product": ["em-control-rod", 10]
+            "product": ["em-control-rod", 8]
         },
         {
             "name": "Nuclear Fuel Rod",
@@ -2430,17 +2581,6 @@
                 ["rubber", 2]
             ],
             "product": ["iodine-infused-filter", 1]
-        },
-		{
-            "name": "Alternate: Diluted Fuel",
-            "key_name": "alt-diluted-fuel",
-            "category": "crafting4",
-            "time": 6,
-            "ingredients": [
-                ["heavy-oil-residue", 5],
-                ["water", 10]
-            ],
-            "product": ["fuel", 10]
         },
         {
             "name": "Aluminum Casing",
@@ -2613,7 +2753,7 @@
                 ["nuclear-fuel-rod", 1],
                 ["water", 1500]
             ],
-            "product": ["nuclear-waste", 25]
+            "product": ["nuclear-waste", 100]
         },
         {
             "name": "Nuclear Pasta",
