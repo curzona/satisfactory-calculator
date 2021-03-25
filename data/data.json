@@ -2915,7 +2915,8 @@
             "ingredients": [
                 ["modular-engine", 5],
                 ["turbo-motor", 2],
-                ["fused-modular-frame", 2]
+                ["fused-modular-frame", 2],
+                ["cooling-system", 6]
             ],
             "product": ["thermal-propulsion-rocket", 2]
         }
