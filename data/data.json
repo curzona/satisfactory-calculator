@@ -2793,10 +2793,10 @@
             "category": "packaging",
             "time": 2,
             "ingredients": [
-                ["packaged-nitric-acid", 1],
+                ["nitric-acid", 1],
                 ["empty-canister", 1]
             ],
-            "product": ["nitric-acid", 1]
+            "product": ["packaged-nitric-acid", 1]
         },
         {
             "name": "Unpackage Nitric Acid",
