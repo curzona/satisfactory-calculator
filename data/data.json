@@ -28,24 +28,24 @@
     ],
     "buildings": [
         {
-            "name": "Constructor",
-            "key_name": "constructor",
+            "name": "Fabricator",
+            "key_name": "fabricator",
             "category": "crafting1",
-            "power": 4,
+            "power": 10,
             "max": 1
         },
         {
-            "name": "Assembler",
-            "key_name": "assembler",
+            "name": "Furnace",
+            "key_name": "furnace",
             "category": "crafting2",
-            "power": 15,
+            "power": 20,
             "max": 2
         },
         {
-            "name": "Manufacturer",
-            "key_name": "manufacturer",
+            "name": "Mega Press",
+            "key_name": "mega-press",
             "category": "crafting3",
-            "power": 55,
+            "power": 30,
             "max": 4
         },
         {
@@ -100,8 +100,8 @@
     ],
     "miners": [
         {
-            "name": "Miner MK1",
-            "key_name": "miner-mk1",
+            "name": "Ore Excavator",
+            "key_name": "ore-excavator",
             "category": "mineral",
             "base_rate": 60,
             "power": 5
@@ -135,14 +135,176 @@
             "power": 40
         },
         {
-            "name": "Resource Well Extractor",
-            "key_name": "resource-well-extractor",
+            "name": "Helium-3 Extractor",
+            "key_name": "helium-3-extractor",
             "category": "gas",
             "base_rate": 60,
-            "power": 0
+            "power": 15
         }
     ],
     "items": [
+        {
+            "name": "Wolfram Ore",
+            "key_name": "wolfram-ore",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Wolfram Bar",
+            "key_name": "wolfram-bar",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Wolfram Wire",
+            "key_name": "wolfram-wire",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Wolfram Plate",
+            "key_name": "wolfram-plate",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Wolfram Powder",
+            "key_name": "wolfram-powder",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Titanium Ore",
+            "key_name": "titanium-ore",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Titanium Bar",
+            "key_name": "titanium-bar",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Titanium Beam",
+            "key_name": "titanium-beam",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Titanium Rod",
+            "key_name": "titanium-rod",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Titanium Sheet",
+            "key_name": "titanium-sheet",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Titanium Housing",
+            "key_name": "titanium-housing",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Tube",
+            "key_name": "tube",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Rotor",
+            "key_name": "rotor",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Stator",
+            "key_name": "stator",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Stabilizer",
+            "key_name": "stabilizer",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Calcium Ore",
+            "key_name": "calcium-ore",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Calcium Block",
+            "key_name": "calcium-block",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Calcite Sheets",
+            "key_name": "calcite-sheets",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Calcium Powder",
+            "key_name": "calcium-powder",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Helium-3",
+            "key_name": "helium-3",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Glass",
+            "key_name": "glass",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Heat Resistant Sheet",
+            "key_name": "heat-resistant-sheet",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Ceramics",
+            "key_name": "ceramics",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Inductor",
+            "key_name": "inductor",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Synthetic Silicon",
+            "key_name": "synthetic-silicon",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Electronics",
+            "key_name": "electronics",
+            "tier": -1,
+            "stack_size": 100
+        },
+        {
+            "name": "Impeller",
+            "key_name": "impeller",
+            "tier": -1,
+            "stack_size": 100
+        },
         {
             "name": "Smart Plating",
             "key_name": "smart-plating",
@@ -324,12 +486,6 @@
             "stack_size": 100
         },
         {
-            "name": "Rotor",
-            "key_name": "rotor",
-            "tier": 2,
-            "stack_size": 100
-        },
-        {
             "name": "Modular Frame",
             "key_name": "modular-frame",
             "tier": 2,
@@ -338,12 +494,6 @@
         {
             "name": "Encased Industrial Beam",
             "key_name": "encased-industrial-beam",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Stator",
-            "key_name": "stator",
             "tier": 4,
             "stack_size": 100
         },
@@ -829,6 +979,254 @@
         }
     ],
     "recipes": [
+        {
+            "name": "Wolrfram Bar",
+            "key_name": "wolfram-bar",
+            "category": "smelting1",
+            "time": 2,
+            "ingredients": [
+                ["wolfram-ore", 2]
+            ],
+            "product": ["wolfram-bar", 2]
+        },
+        {
+            "name": "Titanium Bar",
+            "key_name": "titanium-bar",
+            "category": "smelting1",
+            "time": 2,
+            "ingredients": [
+                ["titanium-ore", 2]
+            ],
+            "product": ["titanium-bar", 2]
+        },
+        {
+            "name": "Calcium Block",
+            "key_name": "calcium-block",
+            "category": "smelting1",
+            "time": 2,
+            "ingredients": [
+                ["calcium-ore", 2]
+            ],
+            "product": ["calcium-block", 2]
+        },
+        {
+            "name": "Wolrfram Wire",
+            "key_name": "wolfram-wire",
+            "category": "crafting1",
+            "time": 4,
+            "ingredients": [
+                ["wolfram-bar", 1]
+            ],
+            "product": ["wolfram-wire", 2]
+        },
+        {
+            "name": "Wolrfram Plate",
+            "key_name": "wolfram-plate",
+            "category": "crafting1",
+            "time": 1,
+            "ingredients": [
+                ["wolfram-bar", 1]
+            ],
+            "product": ["wolfram-plate", 1]
+        },
+        {
+            "name": "Titanium Rod",
+            "key_name": "titanium-rod",
+            "category": "crafting1",
+            "time": 2,
+            "ingredients": [
+                ["titanium-bar", 1]
+            ],
+            "product": ["titanium-rod", 1]
+        },
+        {
+            "name": "Titanium Sheet",
+            "key_name": "titanium-sheet",
+            "category": "crafting1",
+            "time": 2,
+            "ingredients": [
+                ["titanium-bar", 1]
+            ],
+            "product": ["titanium-sheet", 2]
+        },
+        {
+            "name": "Titanium Beam",
+            "key_name": "titanium-beam",
+            "category": "crafting1",
+            "time": 3,
+            "ingredients": [
+                ["titanium-bar", 1]
+            ],
+            "product": ["titanium-beam", 1]
+        },
+        {
+            "name": "Tube",
+            "key_name": "tube",
+            "category": "crafting1",
+            "time": 2,
+            "ingredients": [
+                ["titanium-rod", 1],
+                ["titanium-sheet", 1]
+            ],
+            "product": ["tube", 2]
+        },
+        {
+            "name": "Calcite Sheets",
+            "key_name": "calcite-sheets",
+            "category": "crafting1",
+            "time": 2,
+            "ingredients": [
+                ["calcium-block", 1]
+            ],
+            "product": ["calcite-sheets", 2]
+        },
+        {
+            "name": "Rotor",
+            "key_name": "rotor",
+            "category": "crafting1",
+            "time": 6,
+            "ingredients": [
+                ["titanium-rod", 2],
+                ["wolfram-wire", 2]
+            ],
+            "product": ["rotor", 1]
+        },
+        {
+            "name": "Stabilizer",
+            "key_name": "stabilizer",
+            "category": "crafting1",
+            "time": 6,
+            "ingredients": [
+                ["rotor", 1],
+                ["titanium-rod", 2]
+            ],
+            "product": ["stabilizer", 1]
+        },
+        {
+            "name": "Stator",
+            "key_name": "stator",
+            "category": "crafting1",
+            "time": 3,
+            "ingredients": [
+                ["titanium-housing", 2],
+                ["wolfram-wire", 1]
+            ],
+            "product": ["stator", 1]
+        },
+        {
+            "name": "Wolrfram Powder",
+            "key_name": "wolfram-powder",
+            "category": "crafting2",
+            "time": 2,
+            "ingredients": [
+                ["wolfram-bar", 1]
+            ],
+            "product": ["wolfram-powder", 3]
+        },
+        {
+            "name": "Calcium Powder",
+            "key_name": "calcium-powder",
+            "category": "smelting1",
+            "time": 3,
+            "ingredients": [
+                ["calcium-block", 1]
+            ],
+            "product": ["calcium-powder", 3]
+        },
+        {
+            "name": "Titanium Housing",
+            "key_name": "titanium-housing",
+            "category": "crafting2",
+            "time": 2,
+            "ingredients": [
+                ["titanium-beam", 1],
+                ["titanium-sheet", 2]
+            ],
+            "product": ["titanium-housing", 1]
+        },
+        {
+            "name": "Ceramics",
+            "key_name": "ceramics",
+            "category": "crafting2",
+            "time": 2,
+            "ingredients": [
+                ["calcite-sheets", 1],
+                ["wolfram-powder", 1]
+            ],
+            "product": ["ceramics", 2]
+        },
+        {
+            "name": "Synthetic-Silicon",
+            "key_name": "synthetic-silicon",
+            "category": "crafting1",
+            "time": 2,
+            "ingredients": [
+                ["calcium-powder", 2],
+                ["helium-3", 1],
+                ["ceramics", 2]
+            ],
+            "product": ["synthetic-silicon", 2]
+        },
+        {
+            "name": "Inductor",
+            "key_name": "inductor",
+            "category": "crafting2",
+            "time": 3,
+            "ingredients": [
+                ["tube", 2],
+                ["wolfram-wire", 1],
+                ["ceramics", 2]
+            ],
+            "product": ["inductor", 1]
+        },
+        {
+            "name": "Glass",
+            "key_name": "glass",
+            "category": "crafting2",
+            "time": 3,
+            "ingredients": [
+                ["calcium-powder", 2],
+                ["helium-3", 1]
+            ],
+            "product": ["glass", 1]
+        },
+        {
+            "name": "Heat-Resistant-Sheet",
+            "key_name": "heat-resistant-sheet",
+            "category": "crafting2",
+            "time": 4,
+            "ingredients": [
+                ["wolfram-plate", 1],
+                ["titanium-sheet", 2],
+                ["glass", 1]
+            ],
+            "product": ["heat-resistant-sheet", 1]
+        },
+        {
+            "name": "Electronics",
+            "key_name": "electronics",
+            "category": "crafting1",
+            "time": 5,
+            "ingredients": [
+                ["synthetic-silicon", 2],
+                ["inductor", 1],
+                ["stator", 1]
+            ],
+            "product": ["electronics", 1]
+        },
+        {
+            "name": "Impeller",
+            "key_name": "impeller",
+            "category": "crafting3",
+            "time": 4,
+            "ingredients": [
+                ["titanium-rod", 2],
+                ["heat-resistant-sheet", 2],
+                ["wolfram-plate", 1],
+                ["stabilizer", 1]
+            ],
+            "product": ["impeller", 1]
+        },
         {
             "name": "Smart Plating",
             "key_name": "smart-plating",
@@ -1374,39 +1772,6 @@
             "product": ["reinforced-iron-plate", 1]
         },
         {
-            "name": "Rotor",
-            "key_name": "rotor",
-            "category": "crafting2",
-            "time": 15,
-            "ingredients": [
-                ["iron-rod", 5],
-                ["screw", 25]
-            ],
-            "product": ["rotor", 1]
-        },
-        {
-            "name": "Alternate: Steel Rotor",
-            "key_name": "alt-rotor",
-            "category": "crafting2",
-            "time": 12,
-            "ingredients": [
-                ["steel-pipe", 2],
-                ["wire", 6]
-            ],
-            "product": ["rotor", 1]
-        },
-        {
-            "name": "Alternate: Copper Rotor",
-            "key_name": "alt-copper-rotor",
-            "category": "crafting2",
-            "time": 16,
-            "ingredients": [
-                ["copper-sheet", 6],
-                ["screw", 52]
-            ],
-            "product": ["rotor", 3]
-        },
-        {
             "name": "Modular Frame",
             "key_name": "modular-frame",
             "category": "crafting2",
@@ -1460,28 +1825,6 @@
                 ["concrete", 5]
             ],
             "product": ["encased-industrial-beam", 1]
-        },
-        {
-            "name": "Stator",
-            "key_name": "stator",
-            "category": "crafting2",
-            "time": 12,
-            "ingredients": [
-                ["steel-pipe", 3],
-                ["wire", 8]
-            ],
-            "product": ["stator", 1]
-        },
-        {
-            "name": "Alternate: Quickwire Stator",
-            "key_name": "alt-stator",
-            "category": "crafting2",
-            "time": 15,
-            "ingredients": [
-                ["steel-pipe", 4],
-                ["quickwire", 15]
-            ],
-            "product": ["stator", 2]
         },
         {
             "name": "Motor",
@@ -2932,6 +3275,22 @@
         }
     ],
     "resources": [
+        {
+            "key_name": "titanium-ore",
+            "category": "mineral"
+        },
+        {
+            "key_name": "wolfram-ore",
+            "category": "mineral"
+        },
+        {
+            "key_name": "calcium-ore",
+            "category": "mineral"
+        },
+        {
+            "key_name": "helium-3",
+            "category": "gas"
+        },
         {
             "key_name": "iron-ore",
             "category": "mineral"
