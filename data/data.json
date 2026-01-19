@@ -1,45 +1,42 @@
 {
     "belts": [
         {
-            "name": "Conveyor Belt",
+            "name": "Rail V.1",
             "key_name": "belt1",
-            "rate": 60
-        },
-        {
-            "name": "Conveyor Belt Mk.2",
-            "key_name": "belt2",
             "rate": 120
         },
         {
-            "name": "Conveyor Belt Mk.3",
+            "name": "Rail V.2",
+            "key_name": "belt2",
+            "rate": 240
+        },
+        {
+            "name": "Rail V.2",
             "key_name": "belt3",
-            "rate": 270
-        },
-        {
-            "name": "Conveyor Belt Mk.4",
-            "key_name": "belt4",
             "rate": 480
-        },
-        {
-            "name": "Conveyor Belt Mk.5",
-            "key_name": "belt5",
-            "rate": 780
         }
     ],
     "buildings": [
+        {
+            "name": "Smelter",
+            "key_name": "smelter",
+            "category": "smelting1",
+            "power": 5,
+            "max": 1
+        },
         {
             "name": "Fabricator",
             "key_name": "fabricator",
             "category": "crafting1",
             "power": 10,
-            "max": 1
+            "max": 2
         },
         {
             "name": "Furnace",
             "key_name": "furnace",
             "category": "crafting2",
             "power": 20,
-            "max": 2
+            "max": 4
         },
         {
             "name": "Mega Press",
@@ -49,52 +46,10 @@
             "max": 4
         },
         {
-            "name": "Smelter",
-            "key_name": "smelter",
-            "category": "smelting1",
-            "power": 4,
-            "max": 1
-        },
-        {
-            "name": "Foundry",
-            "key_name": "foundry",
-            "category": "smelting2",
-            "power": 16,
-            "max": 2
-        },
-        {
             "name": "Refinery",
-            "key_name": "oil-refinery",
+            "key_name": "refinery",
             "category": "refining",
-            "power": 30,
-            "max": 2
-        },
-        {
-            "name": "Packager",
-            "key_name": "packager",
-            "category": "packaging",
-            "power": 10,
-            "max": 1
-        },
-        {
-            "name": "Blender",
-            "key_name": "blender",
-            "category": "crafting4",
-            "power": 75,
-            "max": 4
-        },
-        {
-            "name": "Particle Accelerator",
-            "key_name": "particle-accelerator",
-            "category": "crafting5",
-            "power": 1500,
-            "max": 3
-        },
-        {
-            "name": "Nuclear Power Plant",
-            "key_name": "nuclear-power-plant",
-            "category": "nuclear-power-plant",
-            "power": 0,
+            "power": 40,
             "max": 2
         }
     ],
@@ -107,39 +62,18 @@
             "power": 5
         },
         {
-            "name": "Miner MK2",
-            "key_name": "miner-mk2",
-            "category": "mineral",
-            "base_rate": 120,
-            "power": 12
-        },
-        {
-            "name": "Miner MK3",
-            "key_name": "miner-mk3",
-            "category": "mineral",
-            "base_rate": 240,
-            "power": 30
-        },
-        {
-            "name": "Water Extractor",
-            "key_name": "water-extractor",
-            "category": "water",
-            "base_rate": 120,
-            "power": 20
-        },
-        {
-            "name": "Oil Pump",
-            "key_name": "oil-pump",
-            "category": "oil",
-            "base_rate": 120,
-            "power": 40
-        },
-        {
             "name": "Helium-3 Extractor",
             "key_name": "helium-3-extractor",
             "category": "gas",
-            "base_rate": 60,
+            "base_rate": 240,
             "power": 15
+        },
+        {
+            "name": "Sulfur Extractor",
+            "key_name": "sulfur-extractor",
+            "category": "oil",
+            "base_rate": 240,
+            "power": 40
         }
     ],
     "items": [
@@ -270,6 +204,12 @@
             "stack_size": 100
         },
         {
+            "name": "Applicator",
+            "key_name": "applicator",
+            "tier": 4,
+            "stack_size": 100
+        },
+        {
             "name": "Heat Resistant Sheet",
             "key_name": "heat-resistant-sheet",
             "tier": 4,
@@ -310,6 +250,54 @@
             "key_name": "chemicals",
             "tier": 5,
             "stack_size": 100
+        },
+        {
+            "name": "Sulphur Ore",
+            "key_name": "sulphur-ore",
+            "tier": 0,
+            "stack_size": 100
+        },
+        {
+            "name": "Sulphuric Acid",
+            "key_name": "sulphuric-acid",
+            "tier": 6,
+            "stack_size": 100
+        },
+        {
+            "name": "Hardening Agent",
+            "key_name": "hardening-agent",
+            "tier": 7,
+            "stack_size": 100
+        },
+        {
+            "name": "Pressurized Helium",
+            "key_name": "pressurized-helium",
+            "tier": 1,
+            "stack_size": 100
+        },
+        {
+            "name": "Supermagnet",
+            "key_name": "supermagnet",
+            "tier": 7,
+            "stack_size": 100
+        },
+        {
+            "name": "Electromagnetic Coil",
+            "key_name": "electromagnetic-coil",
+            "tier": 8,
+            "stack_size": 100
+        },
+        {
+            "name": "Nozzle",
+            "key_name": "nozzle",
+            "tier": 5,
+            "stack_size": 100
+        },
+        {
+            "name": "Valve",
+            "key_name": "valve",
+            "tier": 6,
+            "stack_size": 100
         }
     ],
     "recipes": [
@@ -342,6 +330,28 @@
                 ["calcium-ore", 2]
             ],
             "product": ["calcium-block", 2]
+        },
+        {
+            "name": "Sulphuric Acid",
+            "key_name": "sulphuric-acid",
+            "category": "refining",
+            "time": 0.5,
+            "ingredients": [
+                ["sulphur-ore", 2],
+                ["chemicals", 1]
+            ],
+            "product": ["sulphuric-acid", 1]
+        },
+        {
+            "name": "Pressurized Helium",
+            "key_name": "pressurized-helium",
+            "category": "refining",
+            "time": 2,
+            "ingredients": [
+                ["helium-3", 1],
+                ["sulphur-ore", 1]
+            ],
+            "product": ["pressurized-helium", 1]
         },
         {
             "name": "Wolrfram Wire",
@@ -448,6 +458,17 @@
             "product": ["stator", 1]
         },
         {
+            "name": "Applicator",
+            "key_name": "applicator",
+            "category": "crafting1",
+            "time": 4,
+            "ingredients": [
+                ["tube", 8],
+                ["glass", 2]
+            ],
+            "product": ["applicator", 1]
+        },
+        {
             "name": "Wolrfram Powder",
             "key_name": "wolfram-powder",
             "category": "crafting2",
@@ -460,7 +481,7 @@
         {
             "name": "Calcium Powder",
             "key_name": "calcium-powder",
-            "category": "smelting1",
+            "category": "crafting2",
             "time": 3,
             "ingredients": [
                 ["calcium-block", 1]
@@ -492,7 +513,7 @@
         {
             "name": "Synthetic-Silicon",
             "key_name": "synthetic-silicon",
-            "category": "crafting1",
+            "category": "crafting2",
             "time": 2,
             "ingredients": [
                 ["calcium-powder", 2],
@@ -539,7 +560,7 @@
         {
             "name": "Electronics",
             "key_name": "electronics",
-            "category": "crafting1",
+            "category": "crafting2",
             "time": 5,
             "ingredients": [
                 ["synthetic-silicon", 2],
@@ -547,32 +568,6 @@
                 ["stator", 1]
             ],
             "product": ["electronics", 1]
-        },
-        {
-            "name": "Impeller",
-            "key_name": "impeller",
-            "category": "crafting3",
-            "time": 4,
-            "ingredients": [
-                ["titanium-rod", 2],
-                ["heat-resistant-sheet", 2],
-                ["wolfram-plate", 1],
-                ["stabilizer", 1]
-            ],
-            "product": ["impeller", 1]
-        },
-        {
-            "name": "Impeller",
-            "key_name": "impeller",
-            "category": "crafting3",
-            "time": 4,
-            "ingredients": [
-                ["titanium-rod", 2],
-                ["heat-resistant-sheet", 2],
-                ["wolfram-plate", 1],
-                ["stabilizer", 1]
-            ],
-            "product": ["impeller", 1]
         },
         {
             "name": "Chemicals",
@@ -585,6 +580,81 @@
                 ["helium-3", 3]
             ],
             "product": ["chemicals", 2]
+        },
+        {
+            "name": "Hardening Agent",
+            "key_name": "hardening-agent",
+            "category": "crafting2",
+            "time": 4,
+            "ingredients": [
+                ["sulphuric-acid", 5],
+                ["synthetic-silicon", 1],
+                ["applicator", 1]
+            ],
+            "product": ["hardening-agent", 2]
+        },
+        {
+            "name": "Supermagnet",
+            "key_name": "supermagnet",
+            "category": "crafting2",
+            "time": 3,
+            "ingredients": [
+                ["sulphuric-acid", 5],
+                ["wolfram-plate", 5],
+                ["chemicals", 2]
+            ],
+            "product": ["supermagnet", 1]
+        },
+        {
+            "name": "Impeller",
+            "key_name": "impeller",
+            "category": "crafting3",
+            "time": 4,
+            "ingredients": [
+                ["titanium-rod", 2],
+                ["heat-resistant-sheet", 2],
+                ["wolfram-plate", 1],
+                ["stabilizer", 1]
+            ],
+            "product": ["impeller", 1]
+        },
+        {
+            "name": "Electromagnetic Coil",
+            "key_name": "electromagnetic-coil",
+            "category": "crafting3",
+            "time": 4,
+            "ingredients": [
+                ["inductor", 2],
+                ["pressurized-helium", 1],
+                ["wolfram-plate", 1],
+                ["supermagnet", 1]
+            ],
+            "product": ["electromagnetic-coil", 1]
+        },
+        {
+            "name": "Nozzle",
+            "key_name": "nozzle",
+            "category": "crafting3",
+            "time": 5,
+            "ingredients": [
+                ["heat-resistant-sheet", 2],
+                ["helium-3", 1],
+                ["stabilizer", 2]
+            ],
+            "product": ["nozzle", 1]
+        },
+        {
+            "name": "Valve",
+            "key_name": "valve",
+            "category": "crafting3",
+            "time": 4,
+            "ingredients": [
+                ["titanium-housing", 1],
+                ["titanium-beam", 3],
+                ["titanium-rod", 2],
+                ["nozzle", 1]
+            ],
+            "product": ["valve", 1]
         }
     ],
     "resources": [
@@ -603,6 +673,10 @@
         {
             "key_name": "helium-3",
             "category": "gas"
+        },
+        {
+            "key_name": "sulphur-ore",
+            "category": "oil"
         }
     ]
 }
