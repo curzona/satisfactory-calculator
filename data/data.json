@@ -46,6 +46,20 @@
             "max": 4
         },
         {
+            "name": "Compounder",
+            "key_name": "compounder",
+            "category": "crafting4",
+            "power": 60,
+            "max": 3
+        },
+        {
+            "name": "Assembler",
+            "key_name": "assembler",
+            "category": "crafting5",
+            "power": 60,
+            "max": 3
+        },
+        {
             "name": "Refinery",
             "key_name": "refinery",
             "category": "refining",
@@ -276,6 +290,18 @@
             "stack_size": 100
         },
         {
+            "name": "Liquid Helium",
+            "key_name": "liquid-helium",
+            "tier": 8,
+            "stack_size": 100
+        },
+        {
+            "name": "Nanofibre",
+            "key_name": "nanofibre",
+            "tier": 9,
+            "stack_size": 100
+        },
+        {
             "name": "Supermagnet",
             "key_name": "supermagnet",
             "tier": 7,
@@ -297,6 +323,90 @@
             "name": "Valve",
             "key_name": "valve",
             "tier": 6,
+            "stack_size": 100
+        },
+        {
+            "name": "Turbine",
+            "key_name": "turbine",
+            "tier": 7,
+            "stack_size": 100
+        },
+        {
+            "name": "Pump",
+            "key_name": "pump",
+            "tier": 8,
+            "stack_size": 100
+        },
+        {
+            "name": "Pressure Tank",
+            "key_name": "pressure-tank",
+            "tier": 9,
+            "stack_size": 100
+        },
+        {
+            "name": "Battery",
+            "key_name": "battery",
+            "tier": 7,
+            "stack_size": 100
+        },
+        {
+            "name": "Generator",
+            "key_name": "generator",
+            "tier": 8,
+            "stack_size": 100
+        },
+        {
+            "name": "Accumulator",
+            "key_name": "accumulator",
+            "tier": 8,
+            "stack_size": 100
+        },
+        {
+            "name": "Resonator",
+            "key_name": "resonator",
+            "tier": 9,
+            "stack_size": 100
+        },
+        {
+            "name": "Synthetic Resin",
+            "key_name": "synthetic-resin",
+            "tier": 8,
+            "stack_size": 100
+        },
+        {
+            "name": "Electromagnet",
+            "key_name": "electromagnet",
+            "tier": 9,
+            "stack_size": 100
+        },
+        {
+            "name": "Lens",
+            "key_name": "lens",
+            "tier": 9,
+            "stack_size": 100
+        },
+        {
+            "name": "Condenser",
+            "key_name": "condenser",
+            "tier": 10,
+            "stack_size": 100
+        },
+        {
+            "name": "Laser Emitter",
+            "key_name": "laser-emitter",
+            "tier": 10,
+            "stack_size": 100
+        },
+        {
+            "name": "Ion Injector",
+            "key_name": "ion-injector",
+            "tier": 10,
+            "stack_size": 100
+        },
+        {
+            "name": "Scanner",
+            "key_name": "scanner",
+            "tier": 10,
             "stack_size": 100
         }
     ],
@@ -594,6 +704,28 @@
             "product": ["hardening-agent", 2]
         },
         {
+            "name": "Liquid Helium",
+            "key_name": "liquid-helium",
+            "category": "crafting4",
+            "time": 3,
+            "ingredients": [
+                ["pressurized-helium", 1],
+                ["hardening-agent", 1]
+            ],
+            "product": ["liquid-helium", 1]
+        },
+        {
+            "name": "Nanofibre",
+            "key_name": "nanofibre",
+            "category": "crafting4",
+            "time": 5,
+            "ingredients": [
+                ["tube", 20],
+                ["liquid-helium", 5]
+            ],
+            "product": ["nanofibre", 1]
+        },
+        {
             "name": "Supermagnet",
             "key_name": "supermagnet",
             "category": "crafting2",
@@ -647,7 +779,7 @@
             "name": "Valve",
             "key_name": "valve",
             "category": "crafting3",
-            "time": 4,
+            "time": 10,
             "ingredients": [
                 ["titanium-housing", 1],
                 ["titanium-beam", 3],
@@ -655,6 +787,179 @@
                 ["nozzle", 1]
             ],
             "product": ["valve", 1]
+        },
+        {
+            "name": "Turbine",
+            "key_name": "turbine",
+            "category": "crafting3",
+            "time": 6,
+            "ingredients": [
+                ["impeller", 1],
+                ["stator", 1],
+                ["rotor", 2],
+                ["sulphuric-acid", 2]
+            ],
+            "product": ["turbine", 1]
+        },
+        {
+            "name": "Pump",
+            "key_name": "pump",
+            "category": "crafting3",
+            "time": 10,
+            "ingredients": [
+                ["valve", 1],
+                ["turbine", 1],
+                ["impeller", 1],
+                ["sulphuric-acid", 3]
+            ],
+            "product": ["pump", 1]
+        },
+        {
+            "name": "Pressure Tank",
+            "key_name": "pressure-tank",
+            "category": "crafting3",
+            "time": 12,
+            "ingredients": [
+                ["heat-resistant-sheet", 5],
+                ["titanium-housing", 3],
+                ["pump", 3],
+                ["valve", 2]
+            ],
+            "product": ["pressure-tank", 1]
+        },
+        {
+            "name": "Battery",
+            "key_name": "battery",
+            "category": "crafting3",
+            "time": 4,
+            "ingredients": [
+                ["inductor", 2],
+                ["electronics", 2],
+                ["sulphuric-acid", 1]
+            ],
+            "product": ["battery", 1]
+        },
+        {
+            "name": "Accumulator",
+            "key_name": "accumulator",
+            "category": "crafting5",
+            "time": 6,
+            "ingredients": [
+                ["electronics", 2],
+                ["stator", 1],
+                ["battery", 2]
+            ],
+            "product": ["accumulator", 1]
+        },
+        {
+            "name": "Generator",
+            "key_name": "generator",
+            "category": "crafting5",
+            "time": 10,
+            "ingredients": [
+                ["turbine", 1],
+                ["battery", 1],
+                ["nozzle", 1]
+            ],
+            "product": ["generator", 1]
+        },
+        {
+            "name": "Resonator",
+            "key_name": "resonator",
+            "category": "crafting5",
+            "time": 12,
+            "ingredients": [
+                ["accumulator", 1],
+                ["generator", 2],
+                ["liquid-helium", 2]
+            ],
+            "product": ["resonator", 1]
+        },
+        {
+            "name": "Synthetic Resin",
+            "key_name": "synthetic-resin",
+            "category": "crafting4",
+            "time": 3,
+            "ingredients": [
+                ["hardening-agent", 2],
+                ["sulphuric-acid", 4],
+                ["calcite-sheets", 10],
+                ["nozzle", 1]
+            ],
+            "product": ["synthetic-resin", 1]
+        },
+        {
+            "name": "Electromagnet",
+            "key_name": "electromagnet",
+            "category": "crafting5",
+            "time": 5,
+            "ingredients": [
+                ["electromagnetic-coil", 3],
+                ["synthetic-resin", 3],
+                ["accumulator", 2]
+            ],
+            "product": ["electromagnet", 1]
+        },
+        {
+            "name": "Lens",
+            "key_name": "lens",
+            "category": "crafting4",
+            "time": 12,
+            "ingredients": [
+                ["glass", 10],
+                ["hardening-agent", 8],
+                ["synthetic-resin", 8]
+            ],
+            "product": ["lens", 1]
+        },
+        {
+            "name": "Condenser",
+            "key_name": "condenser",
+            "category": "crafting4",
+            "time": 15,
+            "ingredients": [
+                ["resonator", 2],
+                ["synthetic-resin", 3],
+                ["nanofibre", 8],
+                ["pump", 3]
+            ],
+            "product": ["condenser", 1]
+        },
+        {
+            "name": "Laser Emitter",
+            "key_name": "laser-emitter",
+            "category": "crafting4",
+            "time": 6,
+            "ingredients": [
+                ["lens", 2],
+                ["resonator", 1],
+                ["electromagnetic-coil", 6]
+            ],
+            "product": ["laser-emitter", 1]
+        },
+        {
+            "name": "Ion Injector",
+            "key_name": "ion-injector",
+            "category": "crafting4",
+            "time": 12,
+            "ingredients": [
+                ["applicator", 10],
+                ["electromagnet", 4],
+                ["pressure-tank", 2]
+            ],
+            "product": ["ion-injector", 1]
+        },
+        {
+            "name": "Scanner",
+            "key_name": "scanner",
+            "category": "crafting4",
+            "time": 10,
+            "ingredients": [
+                ["lens", 2],
+                ["generator", 2],
+                ["stabilizer", 12]
+            ],
+            "product": ["scanner", 1]
         }
     ],
     "resources": [
